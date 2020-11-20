@@ -12,7 +12,7 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.split(" ").uniq
+    
     @emails.each do |key|
       key.delete_if {|key1| key1 = ","}
     end
