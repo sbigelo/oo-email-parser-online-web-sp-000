@@ -13,6 +13,8 @@ class EmailAddressParser
   
   def parse
     @emails.split(" ").uniq
+    @emails.each do |key|
+      key.delete_if
   end
   
 end
