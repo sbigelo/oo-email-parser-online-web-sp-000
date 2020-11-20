@@ -15,6 +15,7 @@ class EmailAddressParser
     @emails.split(" ").uniq
     @emails.each do |key|
       key.delete_if {|key1| key1 = ","}
+    end
   end
   
 end
