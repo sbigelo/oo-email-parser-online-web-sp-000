@@ -13,7 +13,7 @@ class EmailAddressParser
   
   def parse
     
-    @emails.each do |key|
+    @emails.map do |key|
       key.delete_if {|key1| key1 = ","}
     end
   end
