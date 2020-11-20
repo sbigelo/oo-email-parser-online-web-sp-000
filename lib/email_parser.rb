@@ -5,7 +5,7 @@
 
 require 'pry'
 class EmailAddressParser
-  attr_accessor :csv_emails, :delimited_emails
+  attr_accessor :csv_emails, :delimited_emails, :emails
   
   def initialize(emails)
     @emails = emails
